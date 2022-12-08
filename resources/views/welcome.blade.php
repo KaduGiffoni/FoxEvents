@@ -1,6 +1,6 @@
 
 @extends('layouts.main')
-@section('title', 'HDC-Envebts')
+@section('title', 'FoxEvents')
 @section('content')
 
     <div id="search-container" class="col-md-12">
@@ -22,10 +22,10 @@
             <div class="card col-md-3">
                 <img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
                 <div class="card-body">
-                    <p class="card-date">{{ date('d/m/y', strtotime($event->date)) }}</p>
+                    <p class="card-date">{{ date('d/m/Y', strtotime($event->date)) }}</p>
                     <h5 class="card-title">{{ $event->title }}</h5>
-                    <p class="card-participantes">X Particioantes</p>
-                    <a href="/events/{{$event->id}}" class="btn btm-primary">Saber mais</a>
+                    <p class="card-participants"> {{ count($event->users) }} Participantes</p>
+                    <a href="/events/{{ $event->id }}" class="btn btn-primary">Saber mais</a>
                 </div>
             </div>
             @endforeach

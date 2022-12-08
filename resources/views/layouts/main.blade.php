@@ -24,7 +24,8 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="collapse navbar-collapse" id="navbar">
                     <a href="/" class="navbar-brnd">
-                        <img src="/img/hdcevents_logo.svg" alt="HDC Events">
+                        <img src="/img/logo_raposa.png" alt="HDC Events">
+                        FoxEvents
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item">
